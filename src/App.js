@@ -2,7 +2,7 @@ import React from 'react';
 import CharacterCard from './CharacterCard';
 import './App.css';
 import _ from 'lodash';
- 
+import film from './11762_190712_0057.JPG'
 let message = 'Apinun'
  
 const prepareStateFromWord = (given_word) => {
@@ -34,7 +34,13 @@ class App extends React.Component {
   }
   render() {
     return (
+      
+
       <div>
+
+            <img src={film} width="300" height="350" align="top"/>
+
+
         {
           Array.from(this.state.chars).map((item, index) => (
             <CharacterCard
@@ -54,7 +60,7 @@ class App extends React.Component {
             />
           ))
         }
-        <div>ROUND {this.state.attempt}</div>
+        <div class ='cc' >ROUND {this.state.attempt}</div>
         {
           this.state.completed && <h4>Complete</h4>
         }
@@ -63,6 +69,6 @@ class App extends React.Component {
       </div>
     )
   }
-}
+} 
  
 export default App;

@@ -1,8 +1,6 @@
 import React from 'react';
- 
-class CharacterCard extends React.Component {
- 
-    state = {
+ class CharacterCard extends React.Component {
+     state = {
         active: false
     }
  
@@ -24,5 +22,4 @@ class CharacterCard extends React.Component {
         )
     }
 }
- 
 export default CharacterCard;
